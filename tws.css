@@ -1,0 +1,231 @@
+      body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://www.pixelstalk.net/wp-content/uploads/2016/08/Pictures-Background-HD.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            color: #000;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: left;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 60px;
+        }
+
+        .heading {
+            font-size: 18px;
+            
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #005a9e;
+        }
+
+        .extra-links {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .extra-links a {
+            color: #0078d4;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .extra-links a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            color: #0078d4;
+            text-decoration: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .back-link:hover {
+            background-color: #e2e2e2;
+            text-decoration: none;
+        }
+
+        .signin-options-wrapper {
+            width: 100%;
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .signin-options {
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            width: 80%;
+            height: 36px;
+            transform: scale(1.17); /* تحكم في تكبير الحجم هنا */
+        }
+
+        .signin-options img {
+            width: 30px; /* يمكنك تعديل هذا الحجم */
+            height: 30px; /* يمكنك تعديل هذا الحجم */
+            margin-right: 8px;
+        }
+
+        .signin-options div {
+            font-size: 16px; /* يمكنك تعديل حجم النص هنا */
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .container {
+                width: 90%;
+                padding: 20px;
+                box-shadow: none;
+                background-color: white;
+                margin-top: 20px;
+            }
+
+            .button {
+                width: auto;
+                padding: 8px 16px;
+                font-size: 14px;
+                margin-left: auto;
+                display: inline-block;
+            }
+
+            .heading {
+                font-size: 20px;
+            }
+
+            body {
+                background-image: none;
+            }
+
+            .signin-options-wrapper {
+                width: 100%;
+                max-width: 500px;
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .signin-options {
+                width: 100%;
+                padding: 10px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                transform: scale(1); /* بدون تكبير في النسخة الهاتفية */
+            }
+
+            .signin-options img {
+                width: 25px;
+                height: 25px;
+                margin-right: 8px;
+            }
+
+            /* إخفاء العنصر على الهواتف */
+            .signin-options-wrapper {
+                display: none;
+            }
+        }
